@@ -30,8 +30,8 @@ public abstract class Executor {
     public static boolean execute(Command command){
      try{  
         if(command.equals(Command.CLICK_RIGHT)){
-            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
+            robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.CLICK_CENTER)){
@@ -40,12 +40,12 @@ public abstract class Executor {
             return true;
         }
         if(command.equals(Command.CLICK_LEFT)){
-            robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-            robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
+            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.PRESS_RIGHT)){
-            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.PRESS_CENTER)){
@@ -53,11 +53,11 @@ public abstract class Executor {
             return true;
         }
         if(command.equals(Command.PRESS_LEFT)){
-            robot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
+            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.RELEASE_RIGHT)){
-            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+            robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.RELEASE_CENTER)){
@@ -65,7 +65,7 @@ public abstract class Executor {
             return true;
         }
         if(command.equals(Command.RELEASE_LEFT)){
-            robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
+            robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
             return true;
         }
         if(command.equals(Command.TYPE_KEY)){

@@ -12,7 +12,6 @@ package model;
 public class main {
     public static void main(String[] args){
         Reader reader= new Reader();
-        reader.run();
-
+        reader.start();
     }
 }
